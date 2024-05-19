@@ -1,0 +1,208 @@
+
+@media (min-width : 831px){
+    
+    .contentbox{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-around;
+        padding-bottom: 50px;
+        height: 50vh;
+        margin-top: 3%;
+        gap:100px 10px;
+
+    }
+    
+    .image{
+        width: 90px;
+        height: 90px;
+        background: rgb(218, 218, 251);
+        background-clip: border-box;
+        align-items: center;
+        border-radius: 50px;
+    }
+    .image {
+        box-shadow: 2px 2px 2px 1px var(--color-secondary);
+        backdrop-filter: blur(10px);
+        animation-name: floating;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes floating {
+        0%{
+            transform: translate(0,0px);
+        }
+        50%{
+            transform: translate(0,20px);
+        }
+        100%{
+            transform: translate(0,-0px);
+        }
+    }
+    
+
+    .image:hover{
+        width: 100px;
+        height: 100px;
+        transform-style: flat;
+        transition-duration: 0.5;
+    }
+    .content{
+        max-width: 150px;
+        height: 17vh;
+        gap: -30px 10px;
+        text-align: center;
+    }
+    
+    .section{
+        text-align: center;
+        font-size: 50px;
+        font-weight: 500;
+        font-family: var(--font-ral);
+        color: var(--color-third);
+        margin-top: 30px;
+        padding-top: 2.5%;
+    }
+    .caption{
+        transform: translateY(23px);
+        color: var(--color-primary);
+    }
+
+    
+}
+
+@media (max-width : 830px){
+
+    .contentbox{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 40% 0px 40%;
+        height: 100vh;
+        gap: 35px 1px;
+    }
+    .section{
+        text-align: center;
+        font-size: 50px;
+        font-weight: 500;
+        margin-left: 25px;
+        font-family: var(--font-ral);
+        color: var(--color-third);  
+        padding-top: 2.5%;
+    }
+    .content{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        padding: 10px 0px 0px 10px
+    }
+    .image{
+        width: 60px;
+        height: 60px;
+        background: rgb(218, 218, 251);
+        background-clip: border-box;
+        border-radius: 50px;
+        animation: none;
+    }
+
+    .caption{
+        position: absolute;
+        margin: 15% 10% 10% 15%;
+        color: var(--color-four);
+    }
+}
+
+@media (max-width : 400px){
+
+    .contentbox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px 40% 0px 40%;
+        height: 130vh;
+        gap: 35px 1px;
+    }
+    .section{
+        text-align: center;
+        font-size: 50px;
+        font-weight: 500;
+        margin-left: 25px;
+        font-family: var(--font-ral);
+        color: var(--color-third);  
+        padding-top: 2.5%;
+    }
+    .content{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        padding: 10px 0px 0px 10px
+    }
+    .image{
+        width: 60px;
+        height: 60px;
+        background: rgb(218, 218, 251);
+        background-clip: border-box;
+        border-radius: 50px;
+        animation: none;
+    }
+
+    .caption{
+        position: absolute;
+        margin: 15% 10% 10% 15%;
+        color: var(--color-four);
+    }
+}
+
+@media (max-width : 300px){
+
+    .contentbox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px 40% 0px 40%;
+        height: 130vh;
+        gap: 35px 1px;
+    }
+    .section{
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
+        margin-left: 25px;
+        font-family: var(--font-ral);
+        color: var(--color-third);  
+        padding-top: 2.5%;
+    }
+    .content{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        padding: 10px 0px 0px 10px
+    }
+    .image{
+        width: 50px;
+        height: 50px;
+        background: rgb(218, 218, 251);
+        background-clip: border-box;
+        border-radius: 50px;
+        animation: none;
+    }
+
+    .caption{
+        position: absolute;
+        margin: 15% 10px 10% 20%;
+        color: var(--color-four);
+        font-size: 10px;
+    }
+}
+
+p{
+    font-size: 17px;
+    font-weight:300;
+    font-family: var(--font-ral);
+    margin-bottom: 25px;
+    color: var(--color-primary);
+}
+.container{background-color: var(--color-bg);}

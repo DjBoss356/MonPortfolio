@@ -1,0 +1,19 @@
+.display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link {
+    width: 70%;
+    height: 5vh;
+    margin-top: 10px;
+    background-color: rgb(172, 172, 172);
+}
+.a {
+    text-decoration: none;
+}
+
+.body {
+    color: grey;
+    font-size: 10px;
+}

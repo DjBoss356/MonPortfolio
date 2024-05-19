@@ -1,0 +1,298 @@
+@import "../../var.css";
+.container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background: var(--color-primary);
+    margin-top: 20px;
+}
+.titre{
+    font-size: 70px;
+    font-weight:300;
+    font-family:var(--font-ral);
+    letter-spacing: 6px;
+    background: var(--color-secondary);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: var(--color-secondary);
+}
+
+.text{
+    font-size: 17px;
+    font-weight: 300;
+    font-family: var(--font-ral);
+    line-height: 30px;
+    width: 700px;
+    text-align: justify;
+}
+.btncontact{
+    position: relative;
+    background-color:var(--color-secondary);
+    border-radius:30px;
+    color: white;
+    font-family: var(--font-robot);
+    font-weight: 300;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 10px 70px 10px 70px;
+    top: 25px;
+}
+.photo{
+    max-width: 600px;
+    width: 320px;
+    height: 320px;
+    margin: -250px 0px 0px 780px;
+    z-index: 1000;
+    animation-name: floating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0%{
+        transform: translate(0,0px);
+    }
+    50%{
+        transform: translate(0,5px);
+    }
+    100%{
+        transform: translate(0,-0px);
+    }
+}
+.box{
+    position: absolute;
+    display: inline-block;
+    max-width: 600px;
+    width: 250px;
+    height: 250px;
+    margin: -420px 0px 0px 800px;
+    filter: blur(100px);
+    border-radius: 50%;
+    background: var(--color-third);
+    background-color: var(--color-third);
+    opacity: 0.4;;
+}
+.fleche{
+    width: 70px;
+    height: 50px;
+    margin:100px;
+    animation:
+        disparaitre 3s infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 4s;
+    opacity: 0%;
+}
+
+@keyframes disparaitre {
+    0%{
+        opacity:    100%;
+        transform:translate (0, 0px);
+    }
+
+    50%{
+        opacity : 50%;
+        transform:  translate(0,8px) ;
+    }
+
+    100%{
+        opacity : 100%;
+        transform:  translate(0,-0px) ;
+    }
+}
+
+@media (max-width : 830px){
+    .container{
+        margin: 20px 20px 20px 20px;
+        height: 80%;
+    }
+    .content{
+        width: 100%;
+    }
+    .titre{
+        font-size: 60px;
+        font-weight:300;
+    }
+    .text{
+        width: 100%;
+        font-size: 15.5px;
+        font-weight: 300;
+    }
+    .fleche{
+        margin: 90px;
+    }
+
+    .btncontact{
+        display:inline-flex;
+        padding-left: auto;
+        padding-right: auto;
+    }
+
+    .bar{
+        display: none;
+    }
+
+    .photo{display: none;}
+    .box{display: none;}
+}
+@media (min-width : 630px) and (max-width : 830px){
+    .content{
+        width: 100%;
+        padding-top: 25px;
+    }
+    .titre{
+        font-size: 60px;
+        font-weight:300;
+    }
+    .text{
+        width: 100%;
+        font-size: 15.5px;
+        font-weight: 300;
+    }
+    .fleche{
+        margin: 90px;
+    }
+
+    .btncontact{
+        display:inline-flex;
+        padding-left: auto;
+        padding-right: auto;
+    }
+
+    .bar{
+        display: none;
+    }
+
+    .photo{display: none;}
+    .box{display: none;}
+}
+
+@media (max-width : 380px) {
+    .container{
+        height: 110vh;
+    }
+    
+}
+.blur1{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: var(--color-secondary);
+    filter: blur(80px);
+    opacity: 50%;
+    top: 20px;
+    left: 10px;
+}
+
+.blur2{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: var(--color-secondary);
+    filter: blur(80px);
+    opacity: 50%;
+    bottom: 20px;
+    right: -10px;
+}
+
+.bar{
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    border: none;
+    background-color: var(--color-secondary);
+    right: 10%;bottom: -2.5%;
+}
+
+@media (max-width : 380px) {
+    .container{
+        height: 150vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+    .titre{
+        font-size: 50px;
+        font-weight:300;
+        font-family:var(--font-ral);
+        letter-spacing: 6px;
+        background: var(--color-secondary);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        color: var(--color-secondary);
+    }
+    
+    .text{
+        font-size: 14px;
+        font-weight: 300;
+        font-family: var(--font-ral);
+        line-height: 30px;
+        text-align: justify;
+    }
+
+    content{
+        width: 100%;
+    }
+
+    .btncontact{
+        position: relative;
+        background-color:var(--color-secondary);
+        border-radius:150px;
+        color: white;
+        font-family: var(--font-robot);
+        font-weight: 300;
+        font-size: 15px;
+        text-decoration: none;
+        padding: 10px 70px 10px 70px;
+        top:    5px;
+    }
+
+    @media (max-width : 281px) {
+        .container{
+            height: 150vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10px;
+        }
+    
+        .titre{
+            font-size: 40px;
+            font-weight:300;
+            font-family:var(--font-ral);
+            letter-spacing: 6px;
+            background: var(--color-secondary);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            color: var(--color-secondary);
+        }
+        
+        .text{
+            font-size: 14px;
+            font-weight: 300;
+            font-family: var(--font-ral);
+            line-height: 30px;
+            text-align: justify;
+        }
+    
+        content{
+            width: 10%;
+        }
+    
+        .btncontact{
+            position: relative;
+            background-color:var(--color-secondary);
+            border-radius:150px;
+            color: white;
+            font-family: var(--font-robot);
+            font-weight: 300;
+            font-size: 15px;
+            text-decoration: none;
+            padding: 10px 70px 10px 70px;
+            top:    5px;
+        }
+    }
+}

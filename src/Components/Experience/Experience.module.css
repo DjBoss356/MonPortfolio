@@ -1,0 +1,213 @@
+@import "../../var.css";
+
+.container{
+    background-color: var(--color-bg) ;
+}
+@media (min-width : 831px) {
+    .container{
+        height: 100%;
+    }
+    .section{
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 50px;
+        font-weight: 500;
+        font-family: var(--font-ral);
+        color: var(--color-third);
+        padding-top: 2.5%;
+    }
+    .content{
+        display: flex;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap:50px 150px;
+        height: 90vh;
+
+    }
+
+    .exp1{
+        display:inline-block;
+        max-width: 350px;
+        min-height: 25px;
+        padding: 10px 10px 10px 15px;
+        border-bottom: 1px solid var(--color-secondary);
+        border-top-right-radius: 20px;
+        border-bottom-left-radius:15px;
+        background-image: linear-gradient(125deg,
+        rgb(15, 10, 24) 0%,
+        rgb(28, 22, 51) 30%, 
+        rgb(48, 35, 103) 65%, 
+        rgb(77, 39, 182) 100%)
+        ;
+        background-size: 0% 100%;
+        background-repeat: no-repeat;
+        -webkit-backdrop-filter: blur();
+        transition: .4s;
+    }
+
+    .box{
+        box-sizing: content-box;
+    }
+
+    .content .exp1 :nth-child(5){
+        height: 25px;
+    }
+}
+
+@media (max-width : 830px){
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 100vh;
+        width: 102%;
+    }
+    .content{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 180px;
+    }
+    .exp1{
+        width: 90%;
+        height: 20%;
+        margin-top: 25px;
+        border-bottom: 1px solid var(--color-secondary);
+        border-top-right-radius: 20px;
+        border-bottom-left-radius:15px;
+        margin-left: 15px;
+        background-image: linear-gradient(125deg,
+        rgb(15, 10, 24) 0%,
+        rgb(28, 22, 51) 30%, 
+        rgb(48, 35, 103) 65%, 
+        rgb(77, 39, 182) 100%)
+        ;
+        background-size: 0% 100%;
+        background-repeat: no-repeat;
+        -webkit-backdrop-filter: blur();
+        transition: .4s;
+    }
+
+    .section{
+        font-size: 50px;
+        font-weight: 500;
+        font-family: var(--font-ral);
+        color: var(--color-third);  
+    }
+
+    .bar{
+        display: none
+    }
+
+}
+
+@media (max-width : 830px){
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 120vh;
+        width: 102%;
+    }
+    .content{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 180px;
+    }
+}
+
+@media (max-width : 380px){
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 150vh;
+        width: 102%;
+    }
+    .content{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 180px;
+    }
+}
+
+@media (max-width : 300px){
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 170vh;
+        width: 100%;
+    }
+    .content{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 180px;
+    }
+}
+
+.exp1:hover{
+    background-size: 100% 100%;
+}
+
+.title{
+    font-size: 20px;
+    font-weight:500;
+    font-family: var(--font-rowdies);
+    color: var(--color-secondary);
+}
+
+.text{
+    font-size: 17px;
+    font-weight:300;
+    font-family: var(--font-ral);
+    margin-bottom: 20px;
+    color: var(--color-primary); 
+    line-height: 28px;
+}
+
+.bar{
+    position: relative;
+    width: 80%;
+    height: 0.5px;
+    border: none;
+    background-color: var(--color-third);
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.blur1{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: var(--color-secondary);
+    filter: blur(80px);
+    opacity: 50%;
+    top: 1200px;
+    left: 10px;
+    z-index: 2;
+}
+
+.blur2{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: var(--color-secondary);
+    filter: blur(80px);
+    opacity: 50%;
+    bottom: -370px;
+    right: -10px;
+}

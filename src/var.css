@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Protest+Riot&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Rowdies:wght@300&display=swap');
+
+:root{
+    /*colors*/
+    --color-text:#000000;
+    --color-primary:rgb(255, 255, 255);
+    --color-secondary:#6d65ff;
+    --color-third:rgb(176, 176, 249);
+    --color-four:rgb(249, 249, 252);
+    --color-dark2:#0f0c48;
+    --color-bg:rgb(0, 0, 0);
+
+    /*fonts*/
+    --font-robot:"Roboto";
+    --font-bebas:"Bebas Neue";
+    --font-pro:"Protest Riot";
+    --font-ral:"Raleway";
+    --font-rowdies:"Rowdies";
+    --font-comorant:"Cormorant Garamond"
+}

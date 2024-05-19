@@ -1,0 +1,207 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 00px 00px;
+    background-size: 10px;
+    padding-bottom: 8%;
+}
+.container form{
+    width: 65%;
+    height: 67vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.1);
+    box-shadow: 2px 1px 5px var(--color-third);
+    border-bottom: 2px solid var(--color-third);
+    border: 2px solid var(--color-third);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 20px 10px 20px;
+    background-attachment: var(--color-secondary);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container form input{
+    background: none;
+    outline: none;
+    border: 1px solid var(--color-secondary);
+    margin-bottom: 10px;
+    border-radius: 15px;
+    width: 350px;
+    height: 5vh;
+    color: var(--color-text);
+    font-size: 13   px;
+    font-weight:500;
+    font-family: var(--font-ral);
+    margin: 0 auto;
+    padding: 15px 15px 15px 15px;
+}
+
+.container form input::placeholder{
+    color: var(--color-bg);
+    opacity: 50%;
+    padding-left: 5px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section{
+    margin-bottom: 5%;
+    font-size: 50px;
+    font-weight: 500;
+    font-family: var(--font-ral);
+    color: var(--color-third);
+}
+.label{
+    font-size: 35px;
+    font-weight: 500;
+    font-family: var(--font-ral);
+    color: var(--color-third);
+    background-color: var(--color-third);
+}
+
+.name{
+    padding: 50px 0px 50px 0px;
+}
+
+.mail{
+    width: 50%;
+    height: 5vh; 
+}
+.message{
+    outline: none;
+    border: 1px solid var(--color-secondary);
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding: 15px 15px 15px 15px;
+    min-width: 600px;
+    max-width: 800px;
+    min-height: 70px;
+    max-height: 150px;
+    color: var(--color-text);
+    font-size: 17px;
+    font-weight:500;
+    font-family: var(--font-ral);
+    border-radius: 30px;
+    color: var(--color-text);
+    margin: 0 auto;
+}
+
+.message::placeholder{
+    color: var(--color-bg);
+    opacity: 50%;
+    padding-left: 5px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.button{
+    width:150px;
+    height: 5vh;
+    border-radius: 30px;
+    border: 1px solid var(--color-secondary);
+    padding: 5px 5px 5px 5px;
+    margin-top: 50px;
+    color: var(--color-third);  
+    background-color: var(--color-third);
+    color: white;
+    cursor: pointer;
+    margin: 0 auto;
+    font-family: var(--font-ral);
+}
+.textc{
+    text-align:center;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: var(--font-ral);
+    color: var(--color-bg);
+}
+
+.info{
+    text-align: center;
+
+    font-size: 25px;
+    font-weight: 800;
+}
+br{
+    height: 50px;
+}
+
+@media (max-width : 830px){
+    .button{
+        width:50%;
+        height: 5vh;
+        background: none
+    }
+
+    .container form{
+        width: 85%;
+        height: 70vh;
+        background: rgba(255,255,255,0.1);
+        box-shadow: 2px 1px 5px var(--color-third);
+        border-bottom: 2px solid var(--color-third);
+        border: 2px solid var(--color-third);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 50px 70px 50px 50px;
+    }
+
+    .button{
+        width:100px;
+        height: 5vh;
+        border-radius: 30px;
+        border: 1px solid var(--color-secondary);
+        padding: 10px 10px 10px 10px;
+        margin-top: 50px;
+        color: var(--color-third);  
+        background-color: var(--color-third);
+        color: white;
+        cursor: pointer;
+        margin: 0 auto;
+        font-family: var(--font-ral);
+    }
+
+    .message{
+        min-width: 100%;
+        max-width: 800px;
+        min-height: 150px;
+        max-height: 150px;
+    }
+}
+    @media (max-width : 450px){
+        .container form input{
+            background: none;
+            outline: none;
+            border: 1px solid var(--color-secondary);
+            font-size: 15px;
+            margin-bottom: 10px;
+            border-radius: 15px;
+            width: 300px;
+            height: 5vh;
+        }
+
+        .message{
+            max-width: 100px;
+            width: 100px;
+            margin: 0 auto;
+            width: 1%;
+            min-height: 10px;
+            max-height: 150px;
+        }
+
+        .container form{
+            height: 80vh;
+        }
+}
